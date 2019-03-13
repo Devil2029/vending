@@ -1,0 +1,23 @@
+<view class='container'>
+   <scroll-view class='orders' scroll-y='true' bindscrolltolower='lower' lower-threshold='100'> 
+    <view class='order' wx:for='{{orders}}' wx:key='{{name}}'>
+      <view class='order-title'>
+        <text class='order-id'>订单编号：12347856</text>
+        <text class='order-cost'>金额：0.01￥</text>
+      </view>
+      <view class="order-content">
+        <view>
+          <text class='good-name-spec'>冰红茶</text>
+          <text class='pay-state'>状态：未支付</text>
+        </view>
+        <text class='order-time'>下单时间：2018-08-04 15:08:14</text>
+        <view class='btn-area'>
+          <text class='btn-active' bindtap='goPay' data-order='{{item}}'>去支付</text>
+          <text class='btn-positive' bindtap='goCodePage' data-code='{{item.FetchPassWord}}'>取消订单</text>
+        </view>
+        <!-- <button wx:if="{{item.PayState=='01'}}" class='btn-active' bindtap='goCodePage' data-code='{{item.FetchPassWord}}'>取货码</button>
+        <button wx:elif="{{item.PayState=='00'}}" class='btn-active' bindtap='goPay' data-order='{{item}}'>去支付</button> -->
+      </view>
+    </view>
+   </scroll-view> 
+</view>

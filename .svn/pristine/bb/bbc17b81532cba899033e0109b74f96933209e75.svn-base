@@ -1,0 +1,6 @@
+.btn-auth{
+  margin-top: 100rpx;
+  color: white;
+  font-size: 36rpx;
+  width: 600rpx;
+}

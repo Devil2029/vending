@@ -1,0 +1,40 @@
+<view class='container'>
+  <view wx:if='{{showView1}}' class="title">
+    <text>欢迎使用智莱售卖机选购商品！</text>
+    <text>设备号:{{devNo}}</text>
+    <text>{{resultInfo}}</text>
+  </view>
+  <scroll-view wx:if='{{showView1}}' class="goods" scroll-y='true' style="height:980rpx;">
+    <view class='good' wx:for='{{goods}}' wx:key='{{name}}'>
+      <view class='good-ico-p'>
+        <image class='good-ico' src='{{item.ImageInfo[0].ImageUrl}}' mode='aspectFit' bindtap='order' data-product='{{item}}'></image>
+        <image wx:if='{{item.SaleNum == 0}}' class='sold-out-ico' src='/images/ico_sold_out.png' mode='aspectFit'></image> 
+      </view>
+      <text class='good-name'>{{item.ProductName}}</text>
+      <text class='good-spec'>{{item.MeteringNum}}{{item.MeteringName}}</text>  
+      <view class='han-area'>
+        <text class='good-price'>￥{{item.SalePrice}}</text>
+        <button wx:if='{{item.SaleNum != 0}}' class='btn-buy' data-product='{{item}}' bindtap='order'>购买</button>
+        <button wx:else class='btn-buy-negative'>购买</button>
+      </view>
+    </view>
+  </scroll-view> 
+  <view wx:if='{{showView2}}' class="scan-view" bindtap='scanCode'>
+    <image class='scan-ico' src='/images/warning-circle.png'></image>
+    <text class='scan-text'>请先扫描售卖机二维码再购物!</text>
+    <image class='scan-arrow' src='/images/ico_arrow_right.png'></image>
+  </view>
+  <image wx:if='{{showView2}}' class="scan-img" src='/images/img_scan.png' bindtap='scanCode'></image>
+  <!-- <text wx:if='{{showView2}}' class="tip">请先扫描售卖机二维码再购物哦</text> -->
+</view>
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-content">
+      休息一下，马上回来!
+  </view>
+  <view class="modal-footer">
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>

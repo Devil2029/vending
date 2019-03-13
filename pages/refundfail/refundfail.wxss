@@ -1,0 +1,21 @@
+.container{
+  align-items: center;
+}
+.pickup-img{
+  margin-top: 240rpx;
+  width: 200rpx;
+  height: 92rpx;
+}
+.tip-txt1{
+  font-size: 30rpx;
+  color: #323232;
+  margin-top: 60rpx; 
+}
+.tip-txt2{
+  font-size: 30rpx;
+  color: #323232;
+  margin-bottom: 60rpx; 
+}
+.btn-complete{
+  width: 240rpx;
+}

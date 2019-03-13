@@ -1,0 +1,35 @@
+<view class='container'>
+  <!-- <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      <text class="picker-text">{{array[index]}}</text>
+      <image class='picker-arrow' src='/images/ico_arrow_down.png'></image>
+    </view>
+  </picker> -->
+  <scroll-view class='orders' scroll-y='true' bindscrolltolower='lower' lower-threshold='100'>
+    <view class='order' wx:for='{{orders}}' wx:key='{{name}}'>
+      <view class='order-title'>
+        <text class='order-id'>订单编号：{{item.OrderId}}</text>
+        <text class='order-cost'>金额：{{item.PayPrice}}￥</text>
+      </view>
+      <view wx:if="{{item.CurState=='07'}}" class="order-content">
+        <view>
+          <text class='good-name-spec'>{{item.ProductInfo[0].ProductName}}</text>
+          <text class='pay-state'>状态：已取消</text>
+        </view>
+        <text class='order-time'>下单时间：{{item.ApplyTime}}</text>
+      </view>
+      <view wx:else class="order-content">
+        <view>
+          <text class='good-name-spec'>{{item.ProductInfo[0].ProductName}}</text>
+          <text class='pay-state'>状态：{{item.PayState == '01' ? '已完成' : (item.PayState == '00' ? '待支付' : '已失效')}}</text>
+        </view>
+        <text class='order-time'>下单时间：{{item.ApplyTime}}</text>
+        <view class='btn-area' wx:if="{{item.PayState=='01' | item.PayState=='00'}}">
+          <text wx:if="{{item.PayState=='01'}}" class='btn-active' bindtap='goCodePage' data-code='{{item.FetchPassWord}}'>取货码</text>
+          <text wx:if="{{item.PayState=='00'}}" class='btn-active' bindtap='goPay' data-order='{{item}}'>去支付</text>
+          <text wx:if="{{item.PayState=='00'}}" class='btn-positive' bindtap='cancleOrder' data-orderid='{{item.OrderId}}'>取消订单</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

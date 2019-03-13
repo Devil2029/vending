@@ -1,0 +1,58 @@
+.logo{
+  width: 140rpx;
+  height: 32rpx;
+  margin-top: 94rpx;
+  align-self: center;
+}
+.title{
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #4A90E2;
+  align-self: center;
+  font-weight: bold;
+}
+.login-id-view{
+  margin-top: 100rpx;
+  align-self: center;
+  width: 600rpx;
+  height: 90rpx;
+  border: #979797 solid 1rpx;
+  border-radius: 6rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.input-ico{
+  width: 46rpx;
+  height: 48rpx;
+  margin-left: 22rpx;
+  margin-right: 22rpx;
+}
+.dvline{
+  width: 2rpx;
+  height: 100%;
+  background: #979797;
+}
+.input-text{
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  cursor: #4A90E2;
+}
+.pwd-view{
+  margin-top: 40rpx;
+  align-self: center;
+  width: 600rpx;
+  height: 90rpx;
+  border: #979797 solid 1rpx;
+  border-radius: 6rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.login-btn{
+  margin-top: 60rpx;
+  width: 600rpx;
+  height: 90rpx;
+  background: #4A90E2;
+  color: white;
+}

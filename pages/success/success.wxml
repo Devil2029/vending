@@ -1,0 +1,6 @@
+<view class='container'>
+  <image class='pickup-img' src='/images/img_pickup.png'></image>
+  <text class='tip-txt1'>购买成功!</text>
+  <text class='tip-txt2'>请在出货口取走你的商品</text>
+  <button class='btn-complete' type='primary' bindtap='complete'>完成</button>
+</view>

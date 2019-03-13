@@ -1,0 +1,39 @@
+<view class='container'>
+  <view class='user-info' >
+    <image class='backimg' src='/images/bdg_avatar_yellow.png'></image>
+    <text class='userinfo-nickname'>{{nickName}}</text>
+    <image class="userinfo-avatar" src='{{avatarUrl}}'></image>
+  </view>
+  <navigator url='/pages/order/order'>
+    <view class='na'>
+      <view class='na-start'>
+        <image class='na-image' src='/images/ico_my_order.png'></image>
+        <text class='na-text'>我的订单</text>
+      </view>
+      <image class='right-arrow' src='/images/ico_arrow_right_gray.png'></image>
+    </view>
+  </navigator>
+  <!-- <navigator url='/pages/replenishment/replenishment'>
+    <view class='na'>
+      <view class='na-start'>
+        <image class='na-image' src='/images/ico_my_order.png'></image>
+        <text class='na-text'>后台人员补货</text>
+      </view>
+      <image class='right-arrow' src='/images/ico_arrow_right_gray.png'></image>
+    </view>
+  </navigator> -->
+  <!-- <view class='na'>
+    <view class='na-start'>
+      <image class='na-image' src='/images/ico_help.png'></image>
+      <text class='na-text'>帮助</text>
+    </view>
+    <image class='right-arrow' src='/images/ico_arrow_right_gray.png'></image>
+  </view> -->
+  <!-- <view class='na'>
+    <view class='na-start'>
+      <image class='na-image' src='/images/ico_about.png'></image>
+      <text class='na-text'>关于</text>
+    </view>
+    <image class='right-arrow' src='/images/ico_arrow_right_gray.png'></image>
+  </view> -->
+</view>

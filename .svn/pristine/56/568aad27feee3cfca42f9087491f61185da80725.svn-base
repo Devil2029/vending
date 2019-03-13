@@ -1,0 +1,39 @@
+<view class='container'>
+  <scroll-view class='sv' scroll-y='true'>
+    <view class='cargo-road' wx:for='{{inventories}}'>
+      <image class='product-img' src='{{item.ImageUrl}}' mode='aspectFit'></image>
+      <view class='right'>
+        <view class='first-row'>
+          <text class='cargo-road-no'>{{item.BoxId}}</text>
+          <text class='cargo-road-text'>号货道</text>
+          <button class='btn-config-product' bindtap='showSearchView' data-index='{{index}}'>配置商品</button>
+        </view>
+        <text class='product-desc' space='ensp'>{{item.ProductName}} {{item.MeteringNum}}{{item.MeteringName}}</text>
+        <slider data-index='{{index}}' bindchange='bindchange' step='1' min='{{item.InventoryNum}}' max='10' value='{{item.InventoryNum}}' activeColor='#D0021B' show-value></slider>
+      </view>
+    </view>
+  </scroll-view>
+  <button class='save-config' bindtap='saveConfig'>保存设置</button>
+  <view class='mask' wx:if='{{showSearchView}}' bindtap='showSearchView'></view>
+</view>
+<view class='container' wx:if='{{showSearchView}}' animation="{{animationData}}">
+  <view class='title'>
+    <view class='scan-view'>
+      <image class='scan-ico' src='/images/ico_scan_red.png' mode=''></image>
+    </view>
+    <view class='search-input'>
+      <image class='search-ico' src='/images/ico_magnifier.png' bindtap='scanCode'></image>
+      <input class='serach-content' placeholder='输入商品名称' />
+    </view>
+  </view>
+  <scroll-view class='goods-list' scroll-y='true'>
+    <view class='good' wx:for='{{goods}}' data-product='{{item}}' bindtap='chose'>
+      <image wx:if='{{item.ImageInfo[0].ImageUrl != undefined}}' class='good-ico' src='{{item.ImageInfo[0].ImageUrl}}' mode='aspectFit'></image>
+      <image wx:else class='good-ico' src='/images/no_img.png' mode='aspectFit'></image>
+      <view class='good-right'>
+        <text class='good-name' space='ensp'>{{item.ProductName}} ({{item.UnitName}})</text>
+        <text class='good-id'>{{item.ProductId}}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

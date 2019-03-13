@@ -1,0 +1,3 @@
+<view class='container'>
+  <image class='startup-img' src='/images/startup.png'></image>
+</view>

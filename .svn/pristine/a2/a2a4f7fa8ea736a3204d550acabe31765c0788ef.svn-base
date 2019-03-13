@@ -1,0 +1,16 @@
+.con{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.barcode{
+  width: 600rpx;
+  height: 200rpx;
+}
+.code-tip{
+  font-size: 32rpx;
+}

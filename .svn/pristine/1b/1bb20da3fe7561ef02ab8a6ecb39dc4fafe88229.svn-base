@@ -1,0 +1,4 @@
+<view class='con'>
+  <canvas canvas-id="barcode" />
+  <text class='code-tip'>请将条码对准售卖机扫描口</text>
+</view>

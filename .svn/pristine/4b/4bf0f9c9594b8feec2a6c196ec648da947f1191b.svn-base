@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/startup/startup",
+    "pages/confirm/confirm",
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/code/code",
+    "pages/order/order",
+    "pages/success/success",
+    "pages/fail/fail",
+    "pages/auth/auth",
+    "pages/login/login",
+    "pages/replenishment/replenishment",
+    "pages/refundfail/refundfail",
+    "pages/refundsuccess/refundsuccess"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#2C2D31",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "backgroundColor": "#fafafa",
+    "color": "#C8C8C8",
+    "selectedColor": "#E03D3D",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "color": "rgb(233, 32, 32)",
+        "selectedColor": "rgb(233, 32, 32)",
+        "iconPath": "/images/ico_homepage_off.png",
+        "selectedIconPath": "/images/ico_homepage_on.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "color": "#9B9B9B",
+        "selectedColor": "#D0021B",
+        "iconPath": "/images/ico_mine_off.png",
+        "selectedIconPath": "/images/ico_mine_on.png"
+      }
+    ]
+  }
+}

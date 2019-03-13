@@ -1,0 +1,6 @@
+<view class='container'>
+  <image class='pickup-img' src='/images/ico_error.png'></image>
+  <text class='tip-txt1'>出货失败!</text>
+  <text class='tip-txt2'>请联系客服（田工19971266690）处理</text>
+  <button class='btn-complete' type='primary' bindtap='complete'>完成</button>
+</view>

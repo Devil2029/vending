@@ -1,0 +1,60 @@
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 240rpx;
+  margin-bottom: 30rpx;
+}
+.backimg{
+  position: fixed;
+  width: 100%;
+  height: 240rpx;
+}
+.userinfo-avatar {
+  position: fixed;
+  /* overflow:hidden;
+  display:block; */
+  width: 90rpx;
+  height: 90rpx;
+  margin-top: 36rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  position: fixed;
+  margin-top: 156rpx;
+  font-size: 28rpx;
+  color: white;
+}
+.na{
+  margin-top: 2rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 80rpx;
+  background-color: white;
+  justify-content:space-between;
+}
+.na-start{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.na-image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 24rpx;
+}
+.na-text{
+  font-size:32rpx;
+  color: #323232;
+  margin-left: 20rpx;
+}
+.right-arrow{
+  width: 16rpx;
+  height: 28rpx;
+  float: right;
+  margin-right: 24rpx;
+}

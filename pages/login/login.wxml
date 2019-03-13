@@ -1,0 +1,15 @@
+<view class='container'>
+  <image class='logo' src='/images/logo.png'></image>
+  <text class='title'>智莱售卖运营平台</text>
+  <view class='login-id-view'>
+    <image class='input-ico' src='/images/ico_user.png'></image>
+    <view class='dvline'></view>
+    <input class='input-text' placeholder='请输入账户' bindinput='loginIdInput'/>
+  </view>
+  <view class='pwd-view'>
+    <image class='input-ico' src='/images/ico_password.png'></image>
+    <view class='dvline'></view>
+    <input class='input-text' placeholder='请输入密码' bindinput='passwordInput' password='true'/>
+  </view>
+  <button class='login-btn' bindtap='login'>登录</button>
+</view>

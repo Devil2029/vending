@@ -1,0 +1,9 @@
+<view class='container'>
+  <image class='product-ico' src='{{ImageUrl}}'></image>
+  <text class='product-name' space="ensp">{{ProductName}} {{MeteringNum}}{{MeteringName}}</text>
+  <view class='pay-view'>
+    <text class='pay-dec'>支付金额：</text>
+    <text class='pay-total'>{{PayPrice}}</text>
+  </view>
+  <button class='btn-pay' type='primary' bindtap='confirmPay'>确认支付</button>
+</view>

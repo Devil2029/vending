@@ -1,0 +1,14 @@
+/**app.wxss**/
+.container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #EFEFF4;
+  height:100%;
+  width:100%;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+} 

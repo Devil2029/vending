@@ -1,0 +1,24 @@
+.container{
+  align-items: center;
+}
+.product-ico{
+  width: 186rpx;
+  height: 186rpx;
+  margin-top: 120rpx;
+}
+.product-name{
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+.pay-view{
+  margin-top: 20rpx;
+}
+.pay-total{
+  color: red;
+}
+.btn-pay{
+  margin-top: 100rpx;
+  color: white;
+  font-size: 36rpx;
+  width: 600rpx;
+}

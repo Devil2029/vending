@@ -1,0 +1,6 @@
+<view class='container'>
+  <image class='pickup-img' src='/images/img_pickup.png'></image>
+  <text class='tip-txt1'>出货失败!</text>
+  <text class='tip-txt2'>请根据订单编号联系服务人员处理</text>
+  <button class='btn-complete' type='primary' bindtap='complete'>完成</button>
+</view>

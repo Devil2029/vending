@@ -1,0 +1,3 @@
+<view class='container'>
+  <button class='btn-auth' type='primary' bindgetuserinfo='bindgetuserinfo' open-type="getUserInfo">确认授权</button>
+</view>

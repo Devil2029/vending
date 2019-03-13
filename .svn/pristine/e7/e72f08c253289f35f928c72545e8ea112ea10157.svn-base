@@ -1,0 +1,100 @@
+.picker{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 180rpx;
+  height: 60rpx;
+  background-color: white;
+  border:2px solid #979797;
+  margin-top: 28rpx;
+  margin-left: 10rpx; 
+}
+.picker-text{
+  font-size: 32rpx;
+  color: #323232 ;
+  margin-left: 10rpx;
+}
+.picker-arrow{
+  width: 18rpx;
+  height: 10rpx;
+  float: right;
+  margin-right: 10rpx;
+}
+.orders{
+  padding: 10rpx;
+  box-sizing:border-box;
+  width: 100%;
+  height: 100%;
+}
+.order{
+  margin-top: 20rpx; 
+  display: flex;
+  flex-direction: column;
+}
+.order-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D0021B;
+  width: 100%;
+  height: 60rpx;
+}
+.order-id{
+  font-size: 20rpx;
+  color: white;
+  margin-left: 20rpx;
+}
+.order-cost{
+  font-size: 20rpx;
+  color: white;
+  float: right;
+  margin-right: 40rpx;
+}
+.order-content{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /* border: 1px solid #979797; */
+}
+.good-name-spec{
+  font-size: 20rpx;
+  color: #323232 ;
+  margin-left: 20rpx;
+}
+.pay-state{
+  font-size: 20rpx;
+  color: #323232 ;
+  float: right;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+}
+.order-time{
+  font-size: 20rpx;
+  color: #323232;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+.btn-active{
+  float: right;
+  margin-bottom: 20rpx;
+  margin-right: 40rpx;
+  /* border: 2px solid #D0021B; */
+  font-size: 30rpx;
+  color: #C9240F;
+}
+.btn-positive{
+  float: right;
+  margin-bottom: 20rpx;
+  margin-right: 40rpx;
+  font-size: 30rpx;
+  color: #979797;
+}
+button{ 
+  background-color: transparent;
+}
+button::after{ 
+  border: none;
+}
